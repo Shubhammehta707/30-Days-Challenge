@@ -21,32 +21,43 @@ Restriction: Use only if statements and logical operators. Do not use elif or el
 
 
 """Q2. Very Advanced: Employee Bonus and Promotion Eligibility
-
 Write a Python program that accepts an employee's annual salary, years of experience, performance rating (out of 10), and attendance percentage.
-
 Requirements:
-
 Print "Bonus Eligible" if experience is at least 3 years, rating is at least 8, and attendance is at least 90%.
-
 Print "Promotion Eligible" if experience is at least 5 years and rating is at least 9.
-
 Print "High Performer" if the rating is at least 9, regardless of the other conditions.
-
 Each result must be checked independently.
-
 If the salary is greater than 1,000,000, print "High Salary Band"
-
 Restriction: Use independent if statements with appropriate logical operators. Multiple messages may appear."""
 
-annual_salary = float(input("Enter your annual salary"))
-experience = float(input("Enter your years of experience"))
-rating = float(input("Enter your performance rating (out of 10)"))
-attendence_percentage = float(input("Enter your attendence percentage"))
-if experience >= 3 and rating >= 8 and attendence_percentage >= 90:
-    print("Bonus Eligible")
-if experience >= 5 and rating >= 9:
-    print("Promotion Eligible")
-if rating >= 9:
-    print("High Performer")
-if annual_salary > 1000000:
-    print("High Salary Band")
+# annual_salary = float(input("Enter your annual salary"))
+# experience = float(input("Enter your years of experience"))
+# rating = float(input("Enter your performance rating (out of 10)"))
+# attendence_percentage = float(input("Enter your attendence percentage"))
+# if experience >= 3 and rating >= 8 and attendence_percentage >= 90:
+#     print("Bonus Eligible")
+# if experience >= 5 and rating >= 9:
+#     print("Promotion Eligible")
+# if rating >= 9:
+#     print("High Performer")
+# if annual_salary > 1000000:
+#     print("High Salary Band")
+
+
+"""Q3. Expert Level: Nested if Admission and Scholarship System
+Write a Python program for a college admission system using nested if statements only.
+Accept these inputs:
+Student age
+Entrance exam score (out of 100)
+Class 12 percentage
+Family annual income
+Requirements:
+1.Check whether the student is at least 18 years old.
+2.If eligible by age, check whether the entrance score is at least 75.
+3. If the entrance score quallfies, check whether the Class 12 percentage is at least 60.
+4. If all admission requirements are satisfied, print "Admission Approved".
+5. Inside the approved admission block, check whether the family income is at most
+6.₹300,000 and the entrance score is at least 90. If both scholarship conditions are satisfied, print "Full Scholarship Eligible". 
+7. Otherwise, if admission requirements fail, print the specific reason for rejection.
+Challenge: Design the nested conditions so the scholarship check runs only after admission is approved. Avoid elif, else, and compound shortcuts that replace the required nested structure."""
+
