@@ -16,4 +16,9 @@ Otherwise, print the appropriate reason for rejection.
 
 Restriction: Use only if statements and logical operators. Do not use elif or else."""
 
-amount=int(input("Enter "))
+balance = 5000
+withdrawal_amount=int(input("Enter the amount to withdraw: "))
+if withdrawal_amount <= 0 :
+    print("Withdrawal amount cannot be negative")
+if withdarwal_amount % 100 == 0:
+    print("Withdrawal ")
