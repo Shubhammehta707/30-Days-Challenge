@@ -20,5 +20,9 @@ balance = 5000
 withdrawal_amount=int(input("Enter the amount to withdraw: "))
 if withdrawal_amount <= 0 :
     print("Withdrawal amount cannot be negative")
-if withdarwal_amount % 100 == 0:
-    print("Withdrawal ")
+if withdrawal_amount % 100 == 0:
+    print("Withdrawal amount is multiple of 100")
+if withdrawal_amount > 5000:
+    print("Insufficient balance")
+
+
