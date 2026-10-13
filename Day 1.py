@@ -20,3 +20,22 @@ if 0<withdrawal_amount<5000 and withdrawal_amount % 100 == 0:
     print ("Transaction Successfull")
 
 
+"""Q2. Very Advanced: Employee Bonus and Promotion Eligibility
+
+Write a Python program that accepts an employee's annual salary, years of experience, performance rating (out of 10), and attendance percentage.
+
+Requirements:
+
+Print "Bonus Eligible" if experience is at least 3 years, rating is at least 8, and attendance is at least 90%.
+
+Print "Promotion Eligible" if experience is at least 5 years and rating is at least 9.
+
+Print "High Performer" if the rating is at least 9, regardless of the other conditions.
+
+Each result must be checked independently.
+
+If the salary is greater than 1,000,000, print "High Salary Band"
+
+Restriction: Use independent if statements with appropriate logical operators. Multiple messages may appear."""
+
+
