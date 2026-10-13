@@ -19,10 +19,12 @@ Restriction: Use only if statements and logical operators. Do not use elif or el
 balance = 5000
 withdrawal_amount=int(input("Enter the amount to withdraw: "))
 if withdrawal_amount <= 0 :
-    print("Withdrawal amount cannot be negative")
-if withdrawal_amount % 100 == 0:
-    print("Withdrawal amount is multiple of 100")
+    print("Withdrawal amount cannot be negative or Zero")
+if withdrawal_amount % 100 != 0:
+    print("Withdrawal amount is not multiple of 100")
 if withdrawal_amount > 5000:
     print("Insufficient balance")
+if 0<withdrawal_amount<5000 and withdrawal_amount % 100 == 0:
+    print ("Transaction Successfull")
 
 
