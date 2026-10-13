@@ -8,16 +8,16 @@ Print "Transaction Successful" only if all three conditions are satisfied.
 Otherwise, print the appropriate reason for rejection.
 Restriction: Use only if statements and logical operators. Do not use elif or else."""
 
-# balance = 5000
-# withdrawal_amount=int(input("Enter the amount to withdraw: "))
-# if withdrawal_amount <= 0 :
-#     print("Withdrawal amount cannot be negative or Zero")
-# if withdrawal_amount % 100 != 0:
-#     print("Withdrawal amount is not multiple of 100")
-# if withdrawal_amount > 5000:
-#     print("Insufficient balance")
-# if 0<withdrawal_amount<5000 and withdrawal_amount % 100 == 0:
-#     print ("Transaction Successfull")
+balance = 5000
+withdrawal_amount=int(input("Enter the amount to withdraw: "))
+if withdrawal_amount <= 0 :
+    print("Withdrawal amount cannot be negative or Zero")
+if withdrawal_amount % 100 != 0:
+    print("Withdrawal amount is not multiple of 100")
+if withdrawal_amount > 5000:
+    print("Insufficient balance")
+if 0<withdrawal_amount<5000 and withdrawal_amount % 100 == 0:
+    print ("Transaction Successfull")
 
 
 """Q2. Very Advanced: Employee Bonus and Promotion Eligibility
@@ -70,19 +70,19 @@ Requirements:
 7. Otherwise, if admission requirements fail, print the specific reason for rejection.
 Challenge: Design the nested conditions so the scholarship check runs only after admission is approved. Avoid elif, else, and compound shortcuts that replace the required nested structure."""
 
-# student_age = int(input("Enter your age:"))
-# score = float(input("Enter your Enterence Exam Score (out of 100):"))
-# percentage = float(input("Enter your Class 12 perctage:"))
-# family_income = int(input("Enter your Family annual income"))
-# if student_age >= 18:
-#     if score >= 75:
-#         if percentage >= 60:
-#             print("Admission Approved")
-#             if family_income<=300000 and score>=90:
-#                 print("Full Scholarship Eligible.")
-#         if percentage < 60:
-#             print("Rejected,Class 12 percentage is less than 60")
-#     if score < 75:
-#         print("Rejected,Enterence Exam Score is less than 75")
-# if student_age < 18:
-#     print("Rejected,Underage")
+student_age = int(input("Enter your age:"))
+score = float(input("Enter your Enterence Exam Score (out of 100):"))
+percentage = float(input("Enter your Class 12 perctage:"))
+family_income = int(input("Enter your Family annual income"))
+if student_age >= 18:
+    if score >= 75:
+        if percentage >= 60:
+            print("Admission Approved")
+            if family_income<=300000 and score>=90:
+                print("Full Scholarship Eligible.")
+        if percentage < 60:
+            print("Rejected,Class 12 percentage is less than 60")
+    if score < 75:
+        print("Rejected,Enterence Exam Score is less than 75")
+if student_age < 18:
+    print("Rejected,Underage")
