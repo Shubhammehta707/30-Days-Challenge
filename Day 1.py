@@ -30,18 +30,26 @@ Each result must be checked independently.
 If the salary is greater than 1,000,000, print "High Salary Band"
 Restriction: Use independent if statements with appropriate logical operators. Multiple messages may appear."""
 
-# annual_salary = float(input("Enter your annual salary:"))
-# experience = float(input("Enter your years of experience:"))
-# rating = float(input("Enter your performance rating (out of 10):"))
-# attendence_percentage = float(input("Enter your attendence percentage:"))
-# if experience >= 3 and rating >= 8 and attendence_percentage >= 90:
-#     print("Bonus Eligible")
-# if experience >= 5 and rating >= 9:
-#     print("Promotion Eligible")
-# if rating >= 9:
-#     print("High Performer")
-# if annual_salary > 1000000:
-#     print("High Salary Band")
+annual_salary = float(input("Enter your annual salary:"))
+experience = float(input("Enter your years of experience:"))
+rating = float(input("Enter your performance rating (out of 10):"))
+attendence_percentage = float(input("Enter your attendence percentage:"))
+if experience >= 3 and rating >= 8 and attendence_percentage >= 90:
+    print("Bonus Eligible")
+if experience >= 5 and rating >= 9:
+    print("Promotion Eligible")
+if rating >= 9:
+    print("High Performer")
+if annual_salary > 1000000:
+    print("High Salary Band")
+if experience < 3 and rating < 8 and attendence_percentage < 90:
+    print("Not Eligible for Bonus")
+if experience < 5 and rating < 9:
+    print("Not Eligible for Promotion")
+if rating < 9:
+    print("Not High Performer") 
+if annual_salary < 1000000:
+    print("Not High Salary Band")
 
 
 """Q3. Expert Level: Nested if Admission and Scholarship System
@@ -62,19 +70,19 @@ Requirements:
 7. Otherwise, if admission requirements fail, print the specific reason for rejection.
 Challenge: Design the nested conditions so the scholarship check runs only after admission is approved. Avoid elif, else, and compound shortcuts that replace the required nested structure."""
 
-student_age = int(input("Enter your age:"))
-score = float(input("Enter your Enterence Exam Score (out of 100):"))
-percentage = float(input("Enter your Class 12 perctage:"))
-family_income = int(input("Enter your Family annual income"))
-if student_age >= 18:
-    if score >= 75:
-        if percentage >= 60:
-            print("Admission Approved")
-            if family_income<=300000 and score>=90:
-                print("Full Scholarship Eligible.")
-        if percentage < 60:
-            print("Rejected,Class 12 percentage is less than 60")
-    if score < 75:
-        print("Rejected,Enterence Exam Score is less than 75")
-if student_age < 18:
-    print("Rejected,Underage")
+# student_age = int(input("Enter your age:"))
+# score = float(input("Enter your Enterence Exam Score (out of 100):"))
+# percentage = float(input("Enter your Class 12 perctage:"))
+# family_income = int(input("Enter your Family annual income"))
+# if student_age >= 18:
+#     if score >= 75:
+#         if percentage >= 60:
+#             print("Admission Approved")
+#             if family_income<=300000 and score>=90:
+#                 print("Full Scholarship Eligible.")
+#         if percentage < 60:
+#             print("Rejected,Class 12 percentage is less than 60")
+#     if score < 75:
+#         print("Rejected,Enterence Exam Score is less than 75")
+# if student_age < 18:
+#     print("Rejected,Underage")
