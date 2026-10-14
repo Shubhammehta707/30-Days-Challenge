@@ -1,4 +1,4 @@
-Question 1 Scholarship Eligibility Trap
+"""Question 1 Scholarship Eligibility Trap
 A college awards scholarships based on marks and family income.
 Rules:
 If any subject mark is below 35, the student fails.
@@ -8,7 +8,7 @@ Average ≥ 80 and income below ₹5,00,000: 50% scholarship.
 Average ≥ 70: admission without scholarship.
 Otherwise: admission rejected.
 Tricky condition: A student scores 95, 96, and 30, with family income of ₹1,00,000. The average i high, but should the student receive a scholarship?
-Task: Write the complete program with input validation and nested conditions.
+Task: Write the complete program with input validation and nested conditions."""
 
 # 1. Input Collection
 m1 = float(input("Enter marks for Subject 1: "))
