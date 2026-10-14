@@ -60,4 +60,16 @@ else:
             
         else:
             print("Result: Admission Rejected (Average below 70).")
+
+
+"""Question 2 ATM Withdrawal Logic
+Create an ATM program with a balance of ₹15,000.
+Rules:
+• Correct PIN: 4321.
+• Withdrawal must be positive.
+• The balance must never fall below ₹2,000.
+• Withdrawals above ₹10,000 require manager approval.
+• An incorrect PIN must prevent all further transactions.
+Tricky condition: The balance is ₹12,000 and the customer tries to withdraw ₹11,000 without manager approval.
+Task: Use nested if statements to handle every condition and display the correct remaining balance"""
           
