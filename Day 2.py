@@ -139,7 +139,7 @@ Task: Accept salary, experience, and rating; calculate the bonus amount and prom
 
 salary=float(input("Enter your salary: "))
 experience=int(input("Enter your experience in years: "))
-rating=float(input("Enter your rating: "))
+rating=float(input("Enter your rating (out of 10): "))
 if experience>=10 and rating>=4.5:
   bonus=salary*0.25
   salary=salary*0.25+salary
