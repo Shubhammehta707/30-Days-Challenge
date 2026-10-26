@@ -48,3 +48,7 @@ Given a square matrix, find every element that is the smallest in its row and th
 
 """Question 6:Unique Triplets
 Given a list of integers and a target value, find all unique triplets whose sum equals the target.Do not use sets, dictionaries, or sorting. Avoid duplicate triplets in the output."""
+
+"""Question 7:Digit Pattern
+Print all numbers from 100 to 999 whose digits are strictly increasing from left to right and whose digit sum is divisible by 3.
+Example: 123 qualifies because its digits increse and 1+2+3=6."""
