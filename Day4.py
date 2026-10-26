@@ -42,3 +42,9 @@ for i in range(1,5):
 3 2|
 4 1|"""
 
+
+"""Question 5:Maitrix Challenge
+Given a square matrix, find every element that is the smallest in its row and the largest in its column.Print the element and its position. If no such element exists,print an appropriate message."""
+
+"""Question 6:Unique Triplets
+Given a list of integers and a target value, find all unique triplets whose sum equals the target.Do not use sets, dictionaries, or sorting. Avoid duplicate triplets in the output."""
