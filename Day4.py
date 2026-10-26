@@ -6,14 +6,14 @@ Print the following pattern for n=5:
 4321234
 543212345"""
 
-# n=5
-# for i in range(1,n+1):
-#     for j in range(i,0,-1):
-#         print(j,end="")
+n=5
+for i in range(1,n+1):
+    for j in range(i,0,-1):
+        print(j,end="")
     
-#     for j in range(2,i+1):
-#         print(j,end="")
-#     print()
+    for j in range(2,i+1):
+        print(j,end="")
+    print()
     
     
 """Question 2:Number Logic
@@ -52,3 +52,12 @@ Given a list of integers and a target value, find all unique triplets whose sum 
 """Question 7:Digit Pattern
 Print all numbers from 100 to 999 whose digits are strictly increasing from left to right and whose digit sum is divisible by 3.
 Example: 123 qualifies because its digits increse and 1+2+3=6."""
+
+"""Question 8:Combined Loop Challenge
+Write a program that examines every pair o integers i and j from 1 to 20, subject to these rules:
+1. Skip pair where i==j
+2. skip pairs where both numbers are even.
+3. stop the inner loop when i * j > 100.
+4. print only pairs whose sum is a prime number.
+5. count and display the total number of pairs printed.
+Use nested loops and conditional statements to solve the problem."""
