@@ -1,4 +1,4 @@
-"""Q1. Basic + Challenging: Smart Transaction Validator
+"""Basic + Challenging: Smart Transaction Validator
 Write a Python program that accepts a bank balance and a withdrawal amount.
 Requirements:
 Check whether the withdrawal amount is positive.
