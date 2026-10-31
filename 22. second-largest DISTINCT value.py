@@ -2,19 +2,27 @@
 without sorting the list and without using max(), min(), or set().
 If fewer than two distinct values exist, return None."""
 
-nums = [22,29,5,20,25,26]
-first = 0
-second = 0
-for num in nums:
-    if num == first:
-        continue
-    
-    if first is None or num > first:
-        second = first
-        first = num
-        
-    elif second is None or num > second :
-        second = num
+# Input list
+numbers = [10, 25, 25, 8, 20]
 
-print("First largest number is" ,first)
-print("Second largest number is",second)
+# Initialize tracking variables to None
+largest = None
+second_largest = None
+
+# Loop through each number manually
+for num in numbers:
+    if largest is None:
+        largest = num
+    elif num > largest:
+        second_largest = largest
+        largest = num
+    elif num < largest:
+        if second_largest is None or num > second_largest:
+            second_largest = num
+
+# The final variable 'second_largest' will naturally be 'None' 
+# if fewer than two distinct values exist.
+result = second_largest
+
+# Display the final output
+print("Result:", result)
